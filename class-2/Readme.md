@@ -1,4 +1,4 @@
-
+ 
 # JavaScript Essentials
 
 ## 1. Difference between `var`, `let`, and `const

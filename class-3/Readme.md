@@ -71,11 +71,11 @@ console.log(x == y); // false
 
 -> Used to combine conditions
 
-| Operator | Name | Meaning                      |    |                             |
-| -------- | ---- | ---------------------------- | -- | --------------------------- |
-| `&&`     | AND  | Both conditions must be true |    |                             |
-| `        |      | `                            | OR | At least one condition true |
-| `!`      | NOT  | Reverses the result          |    |                             |
+| Operator | Name | Meaning                      |                              
+| -------- | ---- | ---------------------------- | 
+| `&&`     | AND  | Both conditions must be true |                              
+| `//`     |  OR  | At least one condition true  |             
+| `!`      | NOT  | Reverses the result          |                              
 
 ### Example:
 

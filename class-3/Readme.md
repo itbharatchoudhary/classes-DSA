@@ -93,26 +93,41 @@ console.log(!(age > 18));          // false
 
 ## 4 Unary Operators
 
- Work on only one value
+Sure! Let’s break down **Unary Operators** clearly with a table for easy understanding.
 
-| Operator | Meaning                | Example |
-| -------- | ---------------------- | ------- |
-| `++`     | Increment (add 1)      | `a++`   |
-| `--`     | Decrement (subtract 1) | `a--`   |
-| `+`      | Converts to number     | `+x`    |
-| `-`      | Negative value         | `-x`    |
-| `!`      | Logical NOT            | `!true` |
+---
 
-### Example:
+### **Unary Operators in JavaScript**
 
-```js
-let count = 5;
+A **unary operator** is an operator that **works with only one operand** (single value). It performs operations like increment, decrement, negation, or type conversion.
 
-count++;
-console.log(count); // 6
 
-count--;
-console.log(count); // 5
 
-console.log(!true); // false
+| Operator       | Description                                  | Example           | Result / Explanation                                 |
+| -------------- | -------------------------------------------- | ----------------- | ---------------------------------------------------- |
+| `+`            | Unary plus – converts operand to a number    | `+ "5"`           | `5` (string `"5"` converted to number)               |
+| `-`            | Unary minus – negates the value              | `- 10`            | `-10`                                                |
+| `++` (prefix)  | Increment by 1 **before** using the value    | `let a = 5; ++a;` | `6` (`a` becomes 6 immediately)                      |
+| `++` (postfix) | Increment by 1 **after** using the value     | `let a = 5; a++;` | `5` (expression evaluates to 5, `a` becomes 6 after) |
+| `--` (prefix)  | Decrement by 1 **before** using the value    | `let a = 5; --a;` | `4` (`a` becomes 4 immediately)                      |
+| `--` (postfix) | Decrement by 1 **after** using the value     | `let a = 5; a--;` | `5` (expression evaluates to 5, `a` becomes 4 after) |
+| `!`            | Logical NOT – inverts boolean value          | `!true`           | `false`                                              |
+| `typeof`       | Returns the type of operand                  | `typeof 5`        | `"number"`                                           |
+| `void`         | Evaluates expression and returns `undefined` | `void(0)`         | `undefined`                                          |
+| `~`            | Bitwise NOT – inverts bits                   | `~5`              | `-6` (binary inversion)                              |
+
+---
+
+#### **Examples in Code:**
+
+```javascript
+let a = 5;
+console.log(+a);   // 5
+console.log(-a);   // -5
+console.log(++a);  // 6 (prefix)
+console.log(a++);  // 6 (a becomes 7 after this line)
+console.log(!true);// false
+console.log(typeof a); // "number"
+console.log(~5);   // -6
 ```
+
